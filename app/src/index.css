@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-paper: #faf7f1;
+  --color-paper-dim: #f2ede2;
+  --color-line: #e3ddcd;
+
+  --color-ink-950: #0b1220;
+  --color-ink-900: #101a2e;
+  --color-ink-800: #182741;
+  --color-ink-700: #24365a;
+  --color-ink-600: #3a4d73;
+  --color-ink-500: #5a6a8c;
+  --color-ink-400: #8a97b3;
+  --color-ink-300: #b9c1d4;
+
+  --color-gold-700: #92400e;
+  --color-gold-600: #b45309;
+  --color-gold-500: #d97706;
+  --color-gold-100: #fbecc8;
+  --color-gold-50: #fdf6e6;
+
+  --color-teal-700: #0c5b52;
+  --color-teal-600: #0f766e;
+  --color-teal-100: #d8f0ea;
+  --color-teal-50: #eef8f5;
+
+  --color-rust-700: #8f251c;
+  --color-rust-600: #b3261e;
+  --color-rust-100: #f8ded9;
+  --color-rust-50: #fbeeeb;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink-900);
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.font-tabular {
+  font-variant-numeric: tabular-nums;
+}
